@@ -1,0 +1,50 @@
+.img-content {
+  width: 765px;
+  height: 400px;
+}
+
+.text-content {
+  font-size: 18px;
+  font-family: poppins, arial;
+}
+
+.title-content {
+  font-family: montserrat;
+}
+
+@media (max-width: 795px) {
+  .img-content {
+    width: 500px;
+  }
+  .text-content {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 510px) {
+  .img-content {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 410px) {
+  .text-content {
+    text-align: center;
+  }
+}
+
+@media (max-width: 320px) {
+  .img-content {
+    width: 100%;
+    height: auto;
+  }
+  .text-content {
+    font-size: 14px;
+    text-align: center;
+  }
+  .title-content {
+    font-size: 20px;
+    text-align: left;
+  }
+}
