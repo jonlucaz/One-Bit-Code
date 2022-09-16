@@ -1,0 +1,22 @@
+#title-home {
+  font-size: 44px;
+  font-family: poppins;
+}
+
+.btn {
+  width: 150px;
+  padding: 10px 0px;
+  cursor: pointer;
+  background-color: #0a092c;
+  color: white;
+  display: block;
+  margin-top: 10px;
+}
+
+#cadastro-text {
+  font-family: montserrat;
+  font-size: 16px;
+  color: red;
+}
+
+/*# sourceMappingURL=style.css.map */
