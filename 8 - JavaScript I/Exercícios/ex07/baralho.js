@@ -8,15 +8,23 @@ nome da carta puxada. O programa só deve ser encerrado ao escolher a opção de
 caso contrário deve voltar ao menu.
  */
 let baralho = [];
-const interativo = prompt(
-  "Escolha uma opção:\n 1 - Adicionar uma carta\n 2 - Puxar uma carta\n 3 - Sair"
-);
-
-switch (interativo) {
-  case interativo === "1":
-    baralho = promp("Qual carta você quer adicionar");
-  case interativo === "2":
-    baralho.pop();
-  case interativo === "3":
-    break;
-}
+let interativo = "";
+do {
+  interativo = prompt(
+    `Cartas no baralho: ${baralho.length} \nEscolha uma opção:\n 1 - Adicionar uma carta\n 2 - Puxar uma carta\n 3 - Sair`
+  );
+  switch (interativo) {
+    case "1":
+      const novaCarta = prompt("Qual carta você quer adicionar?");
+      baralho.push(novaCarta);
+      break;
+    case "2":
+      baralho.pop();
+      break;
+    case "3":
+      alert("encerrando...");
+      break;
+    default:
+      alert("Opção invalida, tente novamente");
+  }
+} while (interativo !== "3");
